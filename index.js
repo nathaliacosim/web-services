@@ -60,4 +60,8 @@ app.get("/api/:id/:bearer", async (req, res) => {
   res.send({ texto: "funcionou" });
 });
 
-app.listen(8080, () => console.log("Running on port 8080"));
+// app.listen(8080, () => console.log("Running on port 8080"));
+
+app.listen(process.env.PORT || 3000);
+
+module.exports = app;

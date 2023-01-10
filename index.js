@@ -50,5 +50,4 @@ app.get("/api/:id/:bearer", async (req, res) => {
   }
 });
 
-module.exports = app;
-// app.listen(8080, () => console.log("Running on port 8080"));
+app.listen(8080, () => console.log("Running on port 8080"));

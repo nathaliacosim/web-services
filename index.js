@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const axios = require("axios");
 
-app.use("/", express.static(path.join(__dirname, "public")));
+app.use("/css", express.static(path.join(__dirname, "public", "css")));
 
 console.log(__dirname);
 

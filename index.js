@@ -8,9 +8,7 @@ app.use(express.static(path.join(__dirname, "public")));
 console.log(__dirname);
 
 app.get("/", function (req, res) {
-  res.sendFile(
-    path.join(__dirname + "/index.html")
-  );
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 app.get("/api/:id/:bearer", async (req, res) => {
@@ -52,4 +50,5 @@ app.get("/api/:id/:bearer", async (req, res) => {
   }
 });
 
-app.listen(8080, () => console.log("Running on port 8080"));
+module.exports = app;
+// app.listen(8080, () => console.log("Running on port 8080"));

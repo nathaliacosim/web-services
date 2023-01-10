@@ -54,7 +54,7 @@ const get = () => {
   const indexServico = document.querySelector("#urlService").value;
   const bearer = document.querySelector("#token").value;
 
-  instance.defaults.baseURL = indexServico;
+  // instance.defaults.baseURL = indexServico;
 
   console.log("Índice selecionado no combobox de serviços: ", indexServico);
 

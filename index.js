@@ -36,6 +36,7 @@ app.get("/api/:id/:bearer", async (req, res) => {
     "https://pessoal.betha.cloud/service-layer/v1/api/matricula/resumido",
     "https://pessoal.betha.cloud/service-layer/v1/api/cargo/resumido",
     "https://pessoal.betha.cloud/service-layer/v1/api/ato/resumido",
+    "https://pessoal.betha.cloud/service-layer/v1/api/matricula/14354971",
     "https://pessoal.betha.cloud/service-layer/v1/api/concurso?offset=0&limit=50",
     "https://pessoal.betha.cloud/service-layer/v1/api/feriado?offset=0&limit=10",
     "https://pessoal.betha.cloud/service-layer/v1/api/organograma?offset=0&limit=10",

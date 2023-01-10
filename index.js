@@ -7,7 +7,7 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.use(express.static("./src/"));
+app.use(express.static(path.join(__dirname, "src")));
 
 app.get("/api/:id/:bearer", async (req, res) => {
   const { id, bearer } = req.params;

@@ -12,6 +12,14 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
+app.get("/api", async (req, res) => {
+  res.send({ texto: "api" });
+});
+
+app.get("/api:id", async (req, res) => {
+  res.send({ texto: "api :id" });
+});
+
 app.get("/api/:id/:bearer", async (req, res) => {
   // const { id, bearer } = req.params;
 

@@ -11,12 +11,8 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.get("/api", async (req, res) => {
-  res.send({ texto: "api" });
-});
-
-app.get("/api:id", async (req, res) => {
-  res.send({ texto: "api :id" });
+app.get("/api/:id", async (req, res) => {
+  return res.status(404).send({ texto: "Token não informado" });
 });
 
 app.get("/api/:id/:bearer", async (req, res) => {
@@ -29,6 +25,10 @@ app.get("/api/:id/:bearer", async (req, res) => {
 
   if (isNaN(id) || (id < 0 && id > 8)) {
     return res.status(404).send({ texto: "URL inválida" });
+  }
+
+  if (!bearer) {
+    return res.status(404).send({ texto: "Token não informado" });
   }
 
   const urls = [

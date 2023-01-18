@@ -42,6 +42,7 @@ app.get("/api/:id/:bearer", async (req, res) => {
     "https://pessoal.betha.cloud/service-layer/v1/api/organograma?offset=0&limit=10",
     "https://pessoal.betha.cloud/service-layer/v1/api/jornada-trabalho?offset=0&limit=10",
     "https://pessoal.betha.cloud/service-layer/v1/api/diaria?offset=0&limit=10",
+    "https://api.protocolo.betha.cloud/protocolo/service-layer/v1/api/pessoatelefone/19075137",
   ];
 
   try {
